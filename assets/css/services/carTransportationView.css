@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Loading Unloading Section
+--------------------------------------------------------------*/
+.car-transportation-area{
+    min-height: 200px;
+}
+.car-transportation-area .section-body {
+    font-size:0.875rem;
+}
+.car-transportation-area .section-body p{
+    font-size: 1rem;
+}
+.car-transportation-area .services-list{
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.car-transportation-area .services-list .icofont{
+    color:var(--primary-theme-color);
+}
+
+.car-transportation-area .left-img{
+    display: flex;
+    align-items: center;
+}
+
+.car-transportation-area .section-body .main-title{
+    color:var(--secondary-theme-color);
+    font-size: 28px;
+    font-weight: bold;
+}
+.car-transportation-area .section-body .sub-title{
+    color:var(--primary-theme-color);
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,371 @@
+/*--------------------------------------------------------------
+# Partners Section
+--------------------------------------------------------------*/
+.partners-area{
+  min-height: 200px;
+}
+.partners-area .section-body {
+  font-size:0.875rem;
+}
+.partners-area .section-body p{
+  font-size: 1rem;
+}
+.partners-area .left-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partners-area .left-img img{
+  height:350px;
+}
+.partners-area .btn{
+  width:140px;
+}
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials-area .profile {
+  text-align: center;
+}
+
+.testimonials-area .profile .pic {
+  border-radius: 50%;
+  border: 6px solid var(--tertiary-theme-color);
+  margin: 15px auto;
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+}
+
+.testimonials-area .profile .pic img {
+  max-width: 100%;
+}
+
+.testimonials-area .profile h4 {
+  font-weight: 700;
+  color:var(--primary-theme-color);
+  margin-bottom: 5px;
+}
+
+.testimonials-area .profile span {
+  color: #333333;
+}
+
+.testimonials-area .quote {
+  position: relative;
+  background: #fff;
+  padding: 30px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-style: italic;
+  border-radius: 5px;
+}
+.testimonials-area .icofont {
+  color: var(--tertiary-theme-color);
+  font-size: 26px;
+}
+
+.testimonials-area .icofont-quote-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimonials-area .icofont-quote-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+/*--------------------------------------------------------------
+# Benifits Section
+--------------------------------------------------------------*/
+.benefits-area .item-inner {
+  height: 100%
+}
+
+.benefits-area .item-icon {
+  font-size: 3rem;
+  color: var(--primary-theme-color);
+}
+
+.benefits-area .item-heading {
+  font-size: 1.125rem;
+  font-weight:600;
+  color: var(--secondary-theme-color);
+}
+.benefits-area .item-desc {
+  font-size: 1rem;
+  color: var(--secondary-text-color);
+}
+
+/*--------------------------------------------------------------
+# Benifits List Section
+--------------------------------------------------------------*/
+.benefits-list-area .diamond{
+  counter-reset: list-counter;
+  list-style: none;
+  float:left;
+}
+.benefits-list-area .diamond li{
+  margin: 1.5em 0;  
+  display: flex;
+  align-items: center;
+  color:var(--secondary-text-color);  
+}
+.benefits-list-area .diamond li:before{
+  content: "\eed8";
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-right: 15px;
+  border: 3px solid var(--primary-theme-color);
+  background: #fff;
+  color: var(--secondary-theme-color);
+  font-family: IcoFont;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*--------------------------------------------------------------
+# Audience Section
+--------------------------------------------------------------*/
+.audience-area .audience {
+  max-width: 500px;
+}
+.audience-area .card {
+  margin-bottom: 1.5rem;
+  border:none;
+  background:#fff;
+}
+
+.audience-area .card-icon {
+  font-size: 1.25rem;
+  color:var(--primary-theme-color);
+}
+
+.audience-area .card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color:var(--secondary-theme-color);
+}
+
+.audience-area .card-text {
+  color:var(--secondary-text-color);
+}
+
+/*--------------------------------------------------------------
+# Partners Review Section
+--------------------------------------------------------------*/
+.partner-reviews-right-content {
+  position: relative;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0 30px 70px 0 rgba(0,0,0,.07);
+  -moz-box-shadow: 0 30px 70px 0 rgba(0,0,0,.07);
+  box-shadow: 0 30px 70px 0 rgba(0,0,0,.07);
+  border-radius: 50px;
+  max-width: 700px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.partner-reviews-right-content .quota {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  opacity: .1
+}
+
+.partner-reviews-right-content .quota i {
+  font-size: 130px;
+  line-height: 95px;
+  color: var(--secondary-theme-color);
+}
+
+.partner-reviews-content-wrapper {
+  position: relative;
+  left: 70px
+}
+
+@media(max-width: 767px) {
+  .partner-reviews-content-wrapper {
+      left:0
+  }
+}
+
+.single-partner-reviews {
+  background-color: #fff;
+  padding: 40px 30px 50px;
+  border-radius: 50px;
+  border:1px solid #ccc;
+}
+
+.single-partner-reviews .partner-reviews-text .text {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: nunito,sans-serif;
+  line-height: 25px;
+  color:var(--secondary-text-color);;
+  padding-bottom: 25px
+}
+
+.single-partner-reviews .partner-reviews-author {
+  border-top: 1px solid #dedede4f;
+  padding-top: 50px
+}
+
+.single-partner-reviews .partner-reviews-author .author-info .author-image img {
+  border-radius: 50%;
+  height: 70px;
+  width:auto;
+}
+
+.single-partner-reviews .partner-reviews-author .author-info .author-name {
+  padding-left: 30px
+}
+
+.single-partner-reviews .partner-reviews-author .author-info .author-name .name {
+  font-size: 16px;
+  font-weight: 700;
+  color:var(--primary-theme-color);
+}
+
+.single-partner-reviews .partner-reviews-author .author-info .author-name .sub-title {
+  font-size: 14px;
+  color: #798795;
+  margin-top: 5px
+}
+
+@media(max-width: 767px) {
+  .single-partner-reviews .partner-reviews-author .author-review {
+      padding-left:100px;
+      padding-top: 15px
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width:767px) {
+  .single-partner-reviews .partner-reviews-author .author-review {
+      padding-left:0;
+      padding-top: 15px
+  }
+}
+
+.single-partner-reviews .partner-reviews-author .author-review .star {
+padding: 0;
+}
+.single-partner-reviews .partner-reviews-author .author-review .star li {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--secondary-theme-color);
+}
+
+.single-partner-reviews .partner-reviews-author .author-review .review {
+  font-size: 14px;
+  color: #222;
+  margin-top: 5px
+}
+
+
+.partner-reviews-right-content .owl-dots {
+text-align: center;
+}
+.partner-reviews-right-content .owl-nav, .reviews-area .owl-dots {
+margin-top: 5px;
+text-align: center;
+}
+
+.partner-reviews-right-content .owl-dot {
+display: inline-block;
+margin: 0 5px;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background-color: #ddd !important;
+}
+
+.partner-reviews-right-content .owl-dot.active {
+background-color:var(--secondary-theme-color) !important;
+}
+
+/*--------------------------------------------------------------
+# Partners Form Section
+--------------------------------------------------------------*/
+.partner-form-area .partner-form {
+  padding: 40px 30px 50px;
+  border: 1px solid var(--tertiary-theme-color);
+}
+.partner-form-area .left-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .partner-form-area .animated {
+animation: up-down 2s ease-in-out infinite alternate-reverse both;
+} */
+
+/*--------------------------------------------------------------
+# Founder Section
+--------------------------------------------------------------*/
+.founder-area{
+  background-color: var(--secondary-theme-color);
+}
+.founder-area .section-title p{
+  color: #fff;
+}
+.founder-area .profile-card {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  color: #ffffff;
+  border:none;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+.founder-area .profile-card .profile {
+  border-radius: 50%;
+  max-width: 100px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  position: absolute;
+  left: 50%;
+  top:30px;
+}
+.founder-area .profile-card .card-content {
+  width: 100%;
+  padding: 15px 25px;
+  text-align: center;
+  margin-top: 100px;
+}
+.founder-area .profile-card h2 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size:28px;
+  color:var(--primary-theme-color);
+}
+.founder-area .profile-card h2 small {
+  display: block;
+  font-size: 15px;
+  margin-top:10px;
+  color: var(--secondary-theme-color);
+}
+.founder-area .profile-card .card-text{
+  color: var(--secondary-text-color);
+}
+
+

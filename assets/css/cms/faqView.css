@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+# FAQs Section
+--------------------------------------------------------------*/
+#faqAccordion {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 3px;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.04);
+    margin-bottom: 0;
+}
+#faqAccordion .panel {
+    border: medium none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 10px 20px 15px 30px;
+}
+#faqAccordion .panel-heading {
+    border-radius: 30px;
+    padding: 0;
+}
+#faqAccordion .panel-title a {
+    background: var(--primary-theme-color) none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    color: #fff;
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 12px 20px 12px 50px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#faqAccordion .panel-title a.collapsed {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    color: #333;
+}
+#faqAccordion .panel-title a::after, #faqAccordion .panel-title a.collapsed::after {
+    background: var(--primary-theme-color) none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+    color: #fff;
+    content: "\ea99";
+    font-family: IcoFont;
+    font-size: 1.5rem;
+    height: 55px;
+    left: -20px;
+    line-height: 55px;
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    transition: all 0.3s ease 0s;
+    width: 55px;
+}
+#faqAccordion .panel-title a.collapsed::after {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    color: #333;
+    content: "\eaa0";
+}
+#faqAccordion .panel-body {
+    background: transparent none repeat scroll 0 0;
+    border-top: medium none;
+    padding: 20px 25px 10px 9px;
+    position: relative;
+}
+#faqAccordion .panel-body p {
+    border-left: 3px dashed var(--secondary-theme-color);
+    padding-left: 25px;
+}

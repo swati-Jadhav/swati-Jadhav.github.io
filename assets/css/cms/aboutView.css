@@ -1,0 +1,266 @@
+/*--------------------------------------------------------------
+# About Us Section
+--------------------------------------------------------------*/
+.about-area{
+    min-height: 200px;
+}
+.about-area .section-body {
+    font-size:0.875rem;
+}
+.about-area .section-body p{
+    font-size: 1rem;
+}
+.about-area .about-list{
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.about-area .about-list .icofont{
+    color:var(--primary-theme-color);
+}
+
+.about-area .left-img{
+    display: flex;
+    align-items: center;
+}
+
+.about-area .section-body .sub-title{
+    color:var(--primary-theme-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Counter Section
+--------------------------------------------------------------*/
+.counter-area .exp-counter {
+    position: relative;
+	display: inline-block;
+	overflow: hidden;
+	font-size: 260px;
+	line-height: 85%;
+    font-weight: 600;
+    color:var(--secondary-theme-color);
+	letter-spacing: -.06em;
+	padding-right: 10px;
+}
+.counter-area .title-decoration-lines-left {
+    position: relative;
+    padding-left: 26px;
+    font-size: 32px;
+    line-height: 1.3125;
+    color:var(--secondary-text-color);
+    text-transform: capitalize;
+    letter-spacing: .024em;
+    word-spacing: .05em;
+}
+.counter-area .title-decoration-lines-left::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background: #d7d7d7;
+}
+
+.counter-area .title-decoration-lines-left + p {
+    margin-top: 25px;
+    color: #9b9b9b;
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 500;
+    letter-spacing: .05em;
+}
+.counter-amy {
+	text-align: center;
+	padding: 30px 10px;
+}
+
+.counter-amy-number {
+	font-size: 80px;
+	line-height: 0.8;
+	font-weight: 600;
+	letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: var(--primary-font-family);
+    color:var(--primary-theme-color);
+}
+
+.counter-amy-number > * {
+	display: inline-block;
+}
+
+.counter-amy-number .symbol {
+	font-size: 70px;
+	letter-spacing: 0;
+	margin-left: -8px;
+}
+
+.counter-amy-title {
+	font-weight: 400;
+	letter-spacing: .1em;
+    color:var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.125;
+    text-transform: uppercase;
+}
+
+* + .counter-amy-title {
+	margin-top: 10px;
+}
+.border-2-column > div {
+	padding: 0;
+	border-top: 1px solid #e1e1e1;
+}
+
+.border-2-column > div:nth-child(1) {
+	border-top: none;
+}
+
+.border-2-column > div:nth-child(1) .counter-amy {
+	padding-top: 0;
+}
+
+.border-2-column > div:nth-last-child(1) .counter-amy {
+	padding-bottom: 0;
+}
+
+@media (min-width: 576px) {
+	.border-2-column > div:nth-child(2) {
+		border-top: none;
+	}
+	.border-2-column > div:nth-child(2) .counter-amy {
+		padding-top: 0;
+	}
+	.border-2-column > div:nth-last-child(2) .counter-amy {
+		padding-bottom: 0;
+	}
+	.border-2-column > div:nth-child(even) {
+		border-left: 1px solid #e1e1e1;
+	}
+	.border-2-column > div:nth-child(even) .counter-amy {
+		padding-right: 0;
+	}
+	.border-2-column > div:nth-child(odd) .counter-amy {
+		padding-left: 0;
+	}
+}
+
+.context-dark .border-2-column > div, .bg-gray-dark .border-2-column > div, .bg-primary .border-2-column > div {
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.single-team .team-image img {
+    width: 100%
+}
+
+.single-team .team-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 15px;
+    position: relative;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s
+}
+
+.single-team .team-content .team-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    font-family: hind,sans-serif;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s
+}
+
+.single-team .team-content .sub-title {
+    font-size: 14px;
+    color: #646464
+}
+
+.single-team .team-content .social {
+    margin-top: -35px;
+    opacity: 0;
+    visibility: hidden;
+    padding:5px;
+    margin:0;
+    text-align: center;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.single-team .team-content .social li {
+    display: inline-block;
+    margin: 0 7px;    
+}
+
+.single-team .team-content .social li a {
+    font-size: 16px;
+    color: #646464;
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ededed;
+    -webkit-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    -ms-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s
+}
+
+.single-team:hover .team-content {
+    background-color: #fff;
+    margin-top: -60px;
+    -webkit-box-shadow: 0 6px 16px var(--tertiary-theme-color);
+    -moz-box-shadow: 0 6px 16px 0 var(--tertiary-theme-color);
+    box-shadow: 0 6px 16px var(--tertiary-theme-color);
+}
+
+.single-team:hover .team-content .social {
+    margin-top: 25px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.single-team:hover .team-content .social li a {
+    background-color:var(--primary-theme-color);
+    color: #fff;
+    padding: 5px;
+}
+
+
+
+.single-team:hover .team-content .team-name {
+    color: var(--secondary-theme-color);
+}
+
+@media(max-width: 767px) {
+    .team-area {
+        padding-top:75px;
+        padding-bottom: 80px
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+    /* .single-team .team-content {
+        padding:30px 0
+    } */
+}
+

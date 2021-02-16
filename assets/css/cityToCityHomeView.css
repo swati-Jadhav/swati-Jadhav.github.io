@@ -1,0 +1,72 @@
+/*--------------------------------------------------------------
+# City Info Section
+--------------------------------------------------------------*/
+.home-cityinfo-area{
+    min-height: 200px;
+}
+.home-cityinfo-area .section-body .sub-title{
+    color:var(--primary-theme-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+.home-cityinfo-area .section-body p{
+    font-size: 16px;
+}
+    
+/*--------------------------------------------------------------
+# Shifting Charges Section
+--------------------------------------------------------------*/
+.home-charges-area{
+    min-height: 200px;
+}
+.home-charges-area .section-body .sub-title{
+    color:var(--primary-theme-color);
+    font-size: 24px;
+    font-weight: bold;
+}
+.home-charges-area .section-body .factors-list {
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.home-charges-area .section-body .factors-list .icofont{
+    color:var(--primary-theme-color);
+}
+.home-charges-area .charges-table {
+    max-width:80%;
+    margin:0 auto;
+}
+.home-charges-area .charges-table thead {
+    background-color: var(--secondary-theme-color);
+    color: #fff;
+
+}
+.home-charges-area .shifting-charges-item {
+    border:2px solid var(--secondary-theme-color);
+}
+
+.home-charges-area .shifting-charges-item .shifting-type{
+    font-weight: bold;
+    font-size: 18px;
+}
+.home-charges-area .shifting-charges-item .rate-txt{
+    font-size: 14px;
+}
+.home-charges-area .shifting-charges-item .rate{
+    font-size: 14px;
+    font-weight: 800;
+    padding: 0 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .home-charges-area .shifting-charges-item .shifting-type{
+        font-size: 15px;
+    }
+    .home-charges-area .shifting-charges-item .rate-txt,
+    .home-charges-area .shifting-charges-item .rate{
+        font-size: 11px;
+    }
+}

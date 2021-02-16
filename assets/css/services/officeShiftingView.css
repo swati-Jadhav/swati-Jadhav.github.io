@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+# Household Shiting Section
+--------------------------------------------------------------*/
+.office-shifting-area{
+    min-height: 200px;
+}
+.office-shifting-area .section-body {
+    font-size:0.875rem;
+}
+.office-shifting-area .section-body p{
+    font-size: 1rem;
+}
+.office-shifting-area .services-list{
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    line-height: 2rem;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.office-shifting-area .services-list .icofont{
+    color:var(--primary-theme-color);
+}
+
+.office-shifting-area .left-img{
+    display: flex;
+    align-items: center;
+}
+
+.office-shifting-area .section-body .sub-title{
+    color:var(--primary-theme-color);
+    font-size: 24px;
+    font-weight: bold;
+}

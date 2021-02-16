@@ -1,0 +1,141 @@
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+    color: var(--secondary-text-color);
+    text-align: center;
+    background:#fff;
+    padding: 20px 0 30px 0;
+    background: #fff;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    min-height: 185px;
+  }
+  
+  .contact .info-box i {
+    font-size: 40px;
+    color:var(--primary-theme-color);
+    border-radius: 50%;
+    padding: 8px;
+  }
+  
+  .contact .info-box h3 {
+    font-size: 20px;
+    color: #334242;
+    font-weight: 700;
+    margin: 10px 0;
+  }
+  
+  .contact .info-box p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .contact .page-map{
+    border:1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    height:100%;
+    width:100%;
+  }
+
+/*--------------------------------------------------------------
+# City Section
+--------------------------------------------------------------*/
+.contact-city-area .card {
+  border: 0;
+  padding: 70px 10px 10px 10px;
+  position: relative;
+  width: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  text-decoration:none;
+  border-radius:5px;
+  overflow:hidden;
+}
+
+.contact-city-area .card-body {
+  /* z-index: 10; */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px 30px;
+  transition: 0.3s;
+  transition: ease-in-out 0.4s;
+  border-radius: 5px;    
+  text-align: left;    
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-city-area .card-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--primary-theme-color);
+  font-size: 18px;
+}
+.contact-city-area .card-title::after{
+  position: relative;
+	content: "";
+	display: block;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 2px;
+  background-color:var(--secondary-theme-color);
+}
+
+.contact-city-area .card-text {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 13px;
+}
+.contact-city-area .branch-address::before{
+  position: relative;
+  display: inline;
+  left: 0;
+  top: 0;
+  content: "\ed42";
+  font-family: IcoFont;
+  background-color: transparent;
+  color: var(--secondary-theme-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+.contact-city-area .branch-contact::before{
+  position: relative;
+  display: inline;
+  left: 0;
+  top: 0;
+  content: "\efba";
+  font-family: IcoFont;
+  background-color: transparent;
+  color: var(--secondary-theme-color);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.contact-city-area .read-more a {
+  color: var(--primary-theme-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.4s;
+}
+
+.contact-city-area .read-more a:hover {
+  text-decoration: underline;
+}
+
+.contact-city-area .card:hover .card-body {
+  background: var(--secondary-text-color);
+  opacity: 0.9;
+}
+.contact-city-area .card:hover .card-text {
+  color: #fff;
+}
+
+  

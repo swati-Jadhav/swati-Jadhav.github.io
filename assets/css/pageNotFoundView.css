@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+# Page Not Found Section
+--------------------------------------------------------------*/
+.page-not-found-area{
+    height:100vh;
+    background-image: url(../img/banner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: bottom center;
+}
+.page-not-found-area .error-404 { 
+    text-align: center; 
+}
+.page-not-found-area .error-404 .logo{ 
+    background-image: url(../img/header_logo.png);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center center;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    opacity: 1;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
+    border: 2px solid var(--secondary-theme-color);
+    margin: 0 auto;
+}
+.page-not-found-area .error-404 h1{ 
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.page-not-found-area .error-404 h2{ 
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.page-not-found-area .error-404 p{ 
+    color:var(--secondary-theme-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.page-not-found-area .error-404 .contact-msg{ 
+    font-size: 1rem;
+    color: #cac8c8;
+}
+.page-not-found-area .btn-link { 
+    border: none;
+    font-weight: 600;
+    background: transparent; 
+    text-decoration: none;
+}
