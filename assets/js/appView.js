@@ -40,17 +40,26 @@ var appView = {
 			
 		});
 
-    // Toggle Back to top button & Toggle scrolled class to #header, #topbar when page is scrolled
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 200) {
+    let indicatorPosition = $('.counter-area').offset().top - 500;
+    let check = 1;
+
+    $(window).scroll(function(){
+        var totalScroll = $(window).scrollTop();
+        console.log();
+        if (totalScroll > indicatorPosition) {
+            if(check === 1){
+                appView.setCounter('.counter-area .counter');
+                check++;
+            }    
+        }
+        if (totalScroll > 200) {
           $('.go-top2, .go-top3').fadeIn('slow');
           //$('body').addClass('page-scrolled');
-      } else {
-          $('.go-top2, .go-top3').fadeOut('slow');
-          //$('body').removeClass('page-scrolled');
-      }
-    }); 
-      
+        } else {
+            $('.go-top2, .go-top3').fadeOut('slow');
+            //$('body').removeClass('page-scrolled');
+        }
+    });
   },
 
   initAos : function() {
@@ -61,6 +70,28 @@ var appView = {
           // anchorPlacement: 'center-top'
         });
       }      
+  },
+
+  setCounter : function(el){
+    var self = this;
+    $(el).each(function() {
+
+      $(this).prop('counter', 0).animate({
+    
+        counter: $(this).text()
+    
+      }, {
+    
+        duration: 4000,
+    
+        easing: 'swing',
+    
+        step: function(now) {
+    
+          $(this).text(Math.ceil(now));
+        }
+      });
+    });
   },
 
   addMobileMenu :function(){
