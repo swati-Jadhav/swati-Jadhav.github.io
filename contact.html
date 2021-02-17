@@ -205,25 +205,37 @@
 
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
                     <form id="contactForm" method="post" class="mt-4 mt-lg-0 page-form theme-box-shadow" novalidate>
+                        <input id="txtCPage" name="txtCPage" type="hidden" value="Contact us">
                         <div class="form-group mt-3">
                             <label for="txtCName">Name</label>
-                            <input type="text" class="form-control" id="txtCName" placeholder="Enter your name" name="txtCName" required="">
+                            <input type="text" class="form-control required-field letter-field" id="txtCName" placeholder="Enter your name" name="txtCName" data-val="name">
+                            <div class="err_msg"></div>
                         </div>
                         <div class="form-group mt-3">
+                            <label for="txtCEmail">Email Id</label>
+                            <input type="text" class="form-control required-field email-field" id="txtCEmail" placeholder="Enter your email id" name="txtCEmail" data-val="email id">
+                            <div class="err_msg"></div>
+                        </div>
+                        <div class="form-group mt-3">
+                        <div class="form-group mt-3">
                             <label for="txtCMobile">Mobile Number</label>
-                            <input type="text" class="form-control" id="txtCMobile" placeholder="Enter your mobile number" name="txtCMobile" required="">
+                            <input type="text" class="form-control required-field mobile-field" id="txtCMobile" placeholder="Enter your mobile number" name="txtCMobile" maxlength="10" data-val="mobile number">
+                            <div class="err_msg"></div>
                         </div>
                         <div class="form-group mt-3">
                             <label for="txtCFrom">Moving From</label>
-                            <input type="text" class="form-control" id="txtCFrom" placeholder="Enter your moving from location" name="txtCFrom">
+                            <input type="text" class="form-control required-field alphanum-field" id="txtCFrom" placeholder="Enter your moving from location" name="txtCFrom" data-val="moving from location">
+                            <div class="err_msg"></div>
                         </div>
                         <div class="form-group mt-3">
                             <label for="txtCTo">Moving To</label>
-                            <input type="text" class="form-control" id="txtCTo" placeholder="Enter your moving to location" name="txtCTo">
+                            <input type="text" class="form-control required-field alphanum-field" id="txtCTo" placeholder="Enter your moving to location" name="txtCTo" data-val="moving to location">
+                            <div class="err_msg"></div>
                         </div>
                         <div class="form-group mt-3">
                             <label for="txtCAnswer">What is <span id="txtCNum1">6</span> plus <span id="txtCNum2">7</span></label>
-                            <input type="text" class="form-control" id="txtCAnswer" placeholder="Enter your answer" name="txtCAnswer" required="" pattern="13">
+                            <input type="text" class="form-control required-field num-field" id="txtCAnswer" placeholder="Enter your answer" name="txtCAnswer" required="" pattern="13" data-val="answer">
+                            <div class="err_msg"></div>
                         </div>                    
                         <div class="text-center mt-3">
                             <button type="submit" class="btn">Submit</button>
@@ -779,7 +791,9 @@
   <script src="assets/js/common.js"></script>
   <script src="assets/js/appConfig.js"></script>
   <script src="assets/js/appView.js"></script>
+  
   <!-- Custom Page JS File -->
+  <script src="assets/js/cms/contactView.js"></script>
 
 </body>
 

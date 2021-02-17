@@ -2,13 +2,20 @@ var protocol = location.protocol;
 
 var serviceHost = window.location.host;
 var appLiveCall = false;
-var apiBaseUrl = location.protocol + '//' + serviceHost + '/api/';
+var apiBaseUrl = location.protocol + '//' + serviceHost;
 var appBaseUrl = location.protocol + '//'+serviceHost + '/';
 
 var appConfig = {
-    apiUrl : apiBaseUrl + '',
+    apiUrl : 'https://www.cloudpackers.com/cloudpackersnew/',
 	startingPage:'index.html',
     currentYear : new Date().getFullYear(),
+	emailjsConfig:{
+		userName:"CloudPackers",    
+		userId: 'user_eejkRr1GUMHosoysyvnhA',
+		serviceId: 'service_2h89twn',
+		templateId: 'template_ztojpma',
+		apiUrl:'https://api.emailjs.com/api/v1.0/email/send'
+	},
     unsupportedBrowsers : {
 		'Chrome': '34',
 		'MSIE': '8',

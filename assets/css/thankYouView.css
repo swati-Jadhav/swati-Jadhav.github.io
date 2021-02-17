@@ -18,10 +18,11 @@
     width: 100px;
     opacity: 1;
     box-shadow: 3px 3px 10px rgb(0 0 0 / 50%);
-    border: 2px solid var(--primary-theme-color);
     margin: 0 auto;
     font-size: 4rem;
     font-weight: bold;
+    background-color: #10c810;
+    color:#fff;
 }
 .thank-you-area .thank-you h2{ 
     font-size: 3.5rem;
