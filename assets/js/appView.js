@@ -40,17 +40,21 @@ var appView = {
 			
 		});
 
-    let indicatorPosition = $('.counter-area').offset().top - 500;
-    let check = 1;
+    if ($('.counter-area').length) {
+      var indicatorPosition = $('.counter-area').offset().top - 500;
+      var check = 1;
+    }
 
     $(window).scroll(function(){
         var totalScroll = $(window).scrollTop();
-        console.log();
-        if (totalScroll > indicatorPosition) {
-            if(check === 1){
-                appView.setCounter('.counter-area .counter');
-                check++;
-            }    
+
+        if ($('.counter-area').length) {
+          if (totalScroll > indicatorPosition) {
+              if(check === 1){
+                  appView.setCounter('.counter-area .counter');
+                  check++;
+              }    
+          }
         }
         if (totalScroll > 200) {
           $('.go-top2, .go-top3').fadeIn('slow');

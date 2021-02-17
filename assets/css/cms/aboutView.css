@@ -36,6 +36,16 @@
 /*--------------------------------------------------------------
 # Counter Section
 --------------------------------------------------------------*/
+.counter-area{
+    background: url(../../img/hero_bg.jpg) no-repeat center / cover;
+    background-attachment: fixed;
+}
+.counter-area .container {
+    background: #000000c4;
+}
+.counter-area .section-body {
+    padding: 30px 0;
+}
 .counter-area .exp-counter {
     position: relative;
 	display: inline-block;
@@ -52,7 +62,7 @@
     padding-left: 26px;
     font-size: 32px;
     line-height: 1.3125;
-    color:var(--secondary-text-color);
+    color:var(--primary-theme-color);
     text-transform: capitalize;
     letter-spacing: .024em;
     word-spacing: .05em;
@@ -81,13 +91,13 @@
 }
 
 .counter-amy-number {
-	font-size: 80px;
+	font-size: 36px;
 	line-height: 0.8;
 	font-weight: 600;
 	letter-spacing: .1em;
     text-transform: uppercase;
     font-family: var(--primary-font-family);
-    color:var(--primary-theme-color);
+    color:#fff;
 }
 
 .counter-amy-number > * {
@@ -95,18 +105,16 @@
 }
 
 .counter-amy-number .symbol {
-	font-size: 70px;
+	font-size: 34px;
 	letter-spacing: 0;
-	margin-left: -8px;
 }
 
 .counter-amy-title {
 	font-weight: 400;
 	letter-spacing: .1em;
-    color:var(--secondary-text-color);
+    color:#999;
     font-size: 16px;
     line-height: 1.125;
-    text-transform: uppercase;
 }
 
 * + .counter-amy-title {
