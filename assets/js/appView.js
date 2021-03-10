@@ -37,7 +37,6 @@ var appView = {
 		});
 
 		$(window).bind('resizeEnd', function () {
-			
 		});
 
     if ($('.counter-area').length) {
